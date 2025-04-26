@@ -1,15 +1,16 @@
 ![image](https://github.com/user-attachments/assets/4b13498c-289f-4ead-8df9-224e2feae52c)
 
 chúng ta có 1 file python bytecode disassembly,  https://artifacts.picoctf.net/c_titan/127/snake. Dấu hiệu rõ ràng là 
-0 LOAD_CONST 0 (4)
-2 LOAD_CONST 1 (54)
-4 LOAD_CONST 2 (41)
-6 LOAD_CONST 3 (0)
-...
-78 LOAD_CONST 29 (78)
-80 BUILD_LIST 40  
 
-đoạn chương trình trên LOAD_CONST liên tục 40 lần , mỗi lần 1 con số khác nhau
+LOAD_CONST 0 (4)
+LOAD_CONST 1 (54)
+LOAD_CONST 2 (41)
+LOAD_CONST 3 (0)
+
+LOAD_CONST 29 (78)
+BUILD_LIST 40  
+
+đoạn chương trình trên LOAD_CONST liên tục 40 lần , mỗi lần 1 con số khác nhau,
 rồi BUILD_LIST 40 ghép hết lại thành 1 list có 40 phần tử   
 
 ===> input_list chứa 40 số nguyên
