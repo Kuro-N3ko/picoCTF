@@ -47,6 +47,18 @@ nhưng vấn đề là đoạn chuỗi key_str mà đề cho
             118 STORE_NAME               1 (key_str)   ===> "j_o3t"
             
 có thể ko được sắp xếp theo thứ tự nhằm đánh lạc hướng vì chỉ cần khóa xor thay đổi 1 chút là flag sẽ đổi theo (key_list = [ord(c) for c in key_str])
+ờm thực ra mình cx chauw hiểu lắm: 
+
+Dòng 2: key_str = 'J' → key_str là 'J'
+
+Dòng 3: key_str = '_' + key_str → '_' + 'J' = '_J'
+
+Dòng 4: key_str = key_str + 'o' → '_J' + 'o' = '_Jo'
+
+Dòng 5: key_str = key_str + '3' → '_Jo' + '3' = '_Jo3'
+
+Dòng 6: key_str = 't' + key_str → 't' + '_Jo3' = 't_Jo3'
+
 
 cách 1 : Viết script tự động brute-force tất cả các thứ tự của key.
 
