@@ -1,3 +1,3 @@
-# picoCTF-overall
+# picoCTF
 
 Learn it in hard way 
