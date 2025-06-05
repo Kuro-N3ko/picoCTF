@@ -1,4 +1,4 @@
-'''python
+```python
 import hashlib
 import re
 
@@ -32,5 +32,4 @@ decrypted_text = decrypt(ciphertext, key)
 flag = extract_flag(decrypted_text)
 
 print(decrypted_text)
-
-'''
+```
